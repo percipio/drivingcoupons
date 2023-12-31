@@ -142,7 +142,7 @@ plt.ylabel('Accepted Coupons')
 plt.show()
 ```
 
-![Alt text](image-1.png)
+![](images/image-1.png)
 
 How does temperature impact the coupons offers?
 
@@ -154,15 +154,15 @@ plt.ylabel('Total Coupons')
 plt.legend(title='Coupon Type', loc='upper left', labels=['Restaurant \\$20 to $50', 'Bar', 'Carryout & Take away', 'Coffee House', 'Restaurant less than \\$20' ])
 ```
 
-![](image-2.png)
+![](images/image-2.png)
 
 It appears that more coupons were offered in warmer temperatures.
 
 And in the figure below, you can see the same relationship with accepting coupons.
-![](image-3.png)
+![](images/image-3.png)
 
 Although the same goes for rejecting coupons:
-![](image-4.png)
+![](images/image-4.png)
 There were simply more coupons to accept or reject.
 
 I then focused in on just those coupons that were targeting bars and counted the values of those who received such coupons and their propensity to frequent bars.
@@ -212,7 +212,7 @@ plt.ylabel('Accepted Coupons')
 plt.show()
 ```
 
-![](image-5.png)
+![](images/image-5.png)
 
 It appears that those who visit bars frequently accept coupons less frequently. Perhaps this is due to the coupon's designated bar not being the bar the prefer to frequent.
 
@@ -239,7 +239,7 @@ plt.ylabel('Acceptance Rate')
 plt.show()
 ```
 
-![](image-6.png)
+![](images/image-6.png)
 
 ## Conclusions
 Across all these queries, the likelihood of a driver who already frequents bars is more likely to accept a coupon to go to a bar. However, it looks like the more a driver frequents a bar the few coupons they will accepts. Perhaps this is because these drivers have a favorite bar they go to and coupons are for other bars.
@@ -332,7 +332,7 @@ plt.ylabel('Total Coupons')
 plt.title('Accepted vs Rejected Coupons')
 ```
 
-![](image-7.png)
+![](images/image-7.png)
 
 It appears that overall, drivers are more likely to reject a coupon than to accept it. Let's dig into the data to see what's influencing.
 
@@ -346,7 +346,7 @@ plt.ylabel('Total Coupons')
 plt.title('Coupon Acceptance by Age')
 ```
 
-![](image-8.png)
+![](images/image-8.png)
 
 Seemingly stereotypical, but it looks like the acceptance rate starts high but drops off as the driver ages, with a few peaks in mid-life. The rejection rates increase as the person ages.
 
@@ -359,7 +359,7 @@ plt.title('Marital Status by Age')
 plt.xlabel('Age')
 ```
 
-![](image-9.png)
+![](images/image-9.png)
 
 There's certainly a visual correlation to the increase in rejection rates as the driver is in some sort of relationship.
 
@@ -372,7 +372,7 @@ plt.title('Children by Age')
 plt.xlabel('Age')
 ```
 
-![](image-10.png)
+![](images/image-10.png)
 
 Again, as the driver has children, they are likely to reject these coupons. The exception appears to be as they age, this is likely because their children are grown. 
 
@@ -382,7 +382,7 @@ Let's look at passengers.
 sns.histplot(data=limited_only_bars, x='passanger', hue='accepted', multiple='stack')
 ```
 
-![](image-12.png)
+![](images/image-12.png)
 
 People driving alone are more likely to reject a coupon to go to a bar. However, if they were going to accept a coupon, those driving alone are more likely to do so than those who would have with passengers. Those with kids in the car are far less likely to accept a coupon, but some still do.
 
@@ -392,6 +392,6 @@ Let's look at distance and direction now.
 sns.histplot(data=limited_only_bars, x='direction_same', hue='accepted', multiple='stack')
 ```
 
-![](image-13.png)
+![](images/image-13.png)
 
 It looks like the driver is more likely to accept a coupon to a bar that is in the opposite direction than they are driving. However, the majority of coupons offered are in the opposite direction of the driver's destination.
